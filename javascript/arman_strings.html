@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let achternaam = prompt("wat is uw achternaam?");
+		let	voornaam = prompt("wat is uw voornaam")
+		let naam = voornaam + " " + achternaam;
+
+		document.write (`<p> Hallo: ${naam}. </p>`);
+
+		let lengte = (achternaam.length) + (voornaam.length);
+		document.write (`<p>Jouw naam bevat ${lengte} karakters.</p>`);
+
+		let filename = "javaScriptFramework.";
+		let letters = filename.toLowerCase()
+		document.write(`<p>De filename kan beter in kleine letters getypt worden, dus: '${letters}'`);
+
+		document.write(`<p>de originele filename is: ${filename}`);
+
+		let splitsing = "javaScriptFramework";
+		document.write(`<p>Als je ${splitsing} opsplitst, krijg je : ${splitsing.substring(0 , 10)} en ${splitsing.substring(10,19)}`);
+
+		let vijfde = filename.charAt(5);
+		document.write(`<p>Het zesde karakter (volgens mensen) in ${filename} is: ${vijfde}.`);
+
+		let email = "jan.klaassen@mail.com";
+		let teken =  email.indexOf("@");
+
+		document.write(`<p>In ${email} staat de @ op positie: ${teken}`);
+
+		
+
+		let emailnaam = email.substring(0, email.lastIndexOf("@"));
+		document.write(`<p>De naam is dus: ${emailnaam}</p>`);
+
+		var str = "Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' wordt dan:";
+		var res = str.substr(0,8);
+
+		document.write(`<p>${str} ${res}</p>`);
+
+
+
+
+</script>
+
+</body>
+</html>
